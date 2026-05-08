@@ -36,5 +36,34 @@
 
     </div>
 
+    <script>
+
+        function login(){
+        
+            let email = document.getElementById("email").value
+            let senha = document.getElementById("senha").value
+        
+            let emailSalvo = localStorage.getItem("email")
+            let senhaSalva = localStorage.getItem("senha")
+        
+            if(email == emailSalvo && senha == senhaSalva){
+        
+                alert("Login realizado com sucesso!")
+        
+                window.location.href = "quem-somos.html"
+        
+            }else{
+        
+                alert("E-mail ou senha incorretos!")
+        
+            }
+        
+        }
+        
+        </script>
+
+        
+
+
 </body>
 </html>
